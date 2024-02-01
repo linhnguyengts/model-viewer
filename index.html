@@ -12,21 +12,16 @@
 
 </head>
 <body>
-<model-viewer src="Links.glb" poster="Chair.webp" tone-mapping="commerce" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
-  
-  <button slot="ar-button" id="ar-button">
-    View in your space
-  </button>
-
-  <div id="ar-prompt">
-    <img src="../../assets/hand.png">
-  </div>
-
-  <button id="ar-failure">
-    AR is not tracking!
-  </button>
-
-
+<model-viewer src="bone.glb" ios-src="bone.usdz" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1" autoplay animation-name="Running">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
 </model-viewer>
 
 
