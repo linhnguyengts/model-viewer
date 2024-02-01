@@ -24,7 +24,15 @@
     </div>
 </model-viewer>
 
-
+<script>
+  window.addEventListener("load", () => {
+const modelViewer = document.querySelector('model-viewer');
+console.log(modelViewer.activateAR)
+modelViewer.addEventListener('load', () => {
+  modelViewer.activateAR();
+})
+  });
+</script>
 
 <style>
   /* This keeps child nodes hidden while the element loads */
